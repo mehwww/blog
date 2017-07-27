@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>孟文翰的简历</title>
+</head>
+<body>
+  <article class="main">
+    <header class="header clearfix">
+       <hgroup class="header__hgroup">
+        <h1>我是<b>孟文翰</b><small>（mehwww）</small></h1>
+        <h3>一个前端<small>（伪全栈）</small>工程师</h3>
+      </hgroup>
+      <div class="header__images">
+        <img src="assets/selfie.png" alt="孟文翰" class="header__image_selfie">
+        <img src="assets/avatar.png" alt="mehwww" class="header__image_avatar">
+      </div>
+    </header>
+    <hr />
+    <section class="section">
+      <h2 class="section__title">关于我：</h2>
+      <div class="section__content">
+        <ul>
+          <li>三年web开发经验，掌握 vue、react 等主流前端开发框架，熟悉 sass、redux、vuex 等前端开发模式工具。</li>
+          <li>熟悉 webpack 等前端构建系统，熟悉 unix-like 系统，日常开发使用 macOS。</li>
+          <li>熟悉 nodejs 后端开发，熟悉阿里云、七牛等 laas、saas 服务，能独立完成整站前端后台建设配置工作。</li>
+          <li>以上技能全靠自学点出来的，自主提高能力强。</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section__title">工作经历：</h2>
+      <div class="section__content">
+        <div class="job">
+          <p class="job__meta clearfix">
+            <span class="job__company">武汉爱狗团（2015.02 - 2016.02）</span>
+            <span class="job__keyword">nodejs</span>
+            <span class="job__keyword">全栈</span>
+            <span class="job__keyword">angular</span>
+          </p>
+          <ul class="list">
+            <li>使用 nodejs 搭建并维护整个后端 restful api 、数据库及相关交易系统。</li>
+            <li>使用 angular 开发后台管理系统。</li>
+          </ul>
+        </div>
+        <div class="job">
+          <p class="job__meta clearfix">
+            <span class="job__company">武汉小松科技（2016.06 - 2017.07）</span>
+            <span class="job__keyword">vue</span>
+            <span class="job__keyword">react</span>
+            <span class="job__keyword">webpack</span>
+            <span class="job__keyword">前后端分离</span>
+          </p>
+          <ul class="list">
+            <li>配合 rails 后台开发桌面端全站（www.hahaxueche.com/www.hahaxueche.net）及移动端全站（m.hahaxueche.com/m.hahaxueche.net）。</li>
+            <li>使用 React/Redux 开发了 PC官网 的第一个版本，后期出于 SEO 的需求使用 React SSR。</li>
+            <li>使用 Vue/Vuex 开发 Mobile官网，后处于维护成本的考虑逐步将 PC官网 重构至同一技术栈，并逐步迭代了 SSR、Code Splitting、redis缓存等技术。</li>
+            <li>配合前端网站的需求开发了部分 rails 后台功能。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section__title">教育经历：</h2>
+      <ul class="list">
+        <li>华中科技大学 测量仪器与技术 本科（2009.9 - 2013.6）</li>
+      </ul>
+    </section>
+    <section class="section section_contact">
+      <h2 class="section__title">联系方式：</h2>
+      <div class="section__content">
+        <ul>
+          <li><em>Phone：</em><span>15972216217</span></li>
+          <li><em>Wechat：</em><span>mehwww</span></li>
+          <li><em>Github：</em><a target="_blank" href="https://github.com/mehwww">https://github.com/mehwww</a></li>
+          <li><em>Weibo：</em><a target="_blank" href="http://weibo.com/mehwww">http://weibo.com/mehwww</a></li>
+        </ul>
+      </div>
+    </section>
+    <p class="from">From meh.run/resume</p>
+  </article>
+  <div class="action">
+    <button class="action__download action__download_png js-action__download_png">
+      Download<br/>as PNG
+    </button>
+    <button class="action__download action__download_pdf js-action__download_pdf">
+      Download<br/>as PDF
+    </button>
+    <p class="action__hint">或者您可以直接<br/><span>右键</span>-><span>打印</span></p>
+  </div>
+  <script src="assets/html2canvas.min.js"></script>
+  <script src="assets/jspdf.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
