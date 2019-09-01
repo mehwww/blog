@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "author": "meh",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html src/**/*.html",
+    "build": "rimraf docs && parcel build src/index.html src/**/*.html -d docs --no-source-maps"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/parcel-bundler": "^1.12.1",
+    "html2canvas": "^1.0.0-rc.3",
+    "jspdf": "^1.5.3",
+    "less": "^3.10.3",
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.2"
+  }
+}

@@ -1,0 +1,56 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  align-items: flex-end;
+  h3 {
+    margin: 0;
+    margin-left: 12px;
+  }
+}
+
+.rage.is-running {
+  .rotating-rect {
+    animation: rageRotatingRect 10s cubic-bezier(.7,-0.55,.4,1.65) infinite;
+  }
+
+  .rotating-circle {
+    animation: rageRotatingCircle 10s cubic-bezier(.7,-0.55,.4,1.65) infinite;
+  }
+}
+
+
+@keyframes rageRotatingRect {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  30%, 50% {
+    stroke-dashoffset: -768;
+  }
+
+  80%, to {
+    stroke-dashoffset: -1536;
+  }
+}
+
+@keyframes rageRotatingCircle {
+  from {
+    stroke-dashoffset: 603.185;
+  }
+
+  30%, 50% {
+    stroke-dashoffset: 0;
+  }
+
+  80%, to {
+    stroke-dashoffset: -603.185;
+  }
+}

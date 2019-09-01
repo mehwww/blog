@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>孟文翰的简历</title>
+  </head>
+  <body>
+    <article class="main">
+      <header class="header clearfix">
+        <hgroup class="header__hgroup">
+          <h1>我是<b>孟文翰</b><small>（mehwww）</small></h1>
+          <h3>一个前端工程师<small>（别的也会点儿）</small></h3>
+        </hgroup>
+        <div class="header__images">
+          <img alt="孟文翰" class="header__image_selfie" />
+          <img alt="mehwww" class="header__image_avatar" />
+        </div>
+      </header>
+      <hr />
+      <section class="section">
+        <h2 class="section__title">关于我：</h2>
+        <div class="section__content">
+          <ul>
+            <li>
+              五年前端开发经验，目前带领 10
+              人左右规模的团队，主要负责集团对内对外中后台场景下的前端开发工作。
+            </li>
+            <li>
+              有一定产品思维，会主动了解所负责业务的领域知识，在负责数据产品前端开发期间，熟悉了整个大数据开发的流程及常见模式。
+            </li>
+            <li>
+              熟悉 JavaScript / TypeScript，掌握 react、vue
+              等主流前端开发框架，熟悉 Canvas、SVG
+              相关的可视化开发技能，关于前端开发有自己的心得体会，关注各种前端前沿领域知识。
+            </li>
+            <li>
+              熟悉 webpack 等前端构建系统，熟悉 unix-like 系统，日常开发使用
+              macOS。
+            </li>
+            <li>
+              了解 Node.js 后端开发，熟悉阿里云、七牛等 IaaS、SaaS
+              服务，能独立完成整站前端后台建设配置工作。
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section__title">主要项目经历：</h2>
+        <div class="section__content">
+          <div class="project">
+            <p class="project__meta clearfix">
+              <span class="project__name">哪吒智能 BI 系统</span>
+              <span class="project__keyword">react</span>
+              <span class="project__keyword">TypeScript</span>
+              <span class="project__keyword">Ant Design</span>
+              <span class="project__keyword">ECharts</span>
+            </p>
+            <ul class="list">
+              <li>
+                大搜车自研的智能 BI
+                系统，负责将集团数仓开发出来的各类报表数据以图表可视化的方式展现出来，在集团对内对外多个报表场景都有应用。支持指标卡、表格、折线图、柱状图等
+                20 多种图表类型。
+              </li>
+              <li>
+                由各 BU 数据分析师或业务 PD 拖拉拽 MySQL report
+                层报表的字段，设置维度与数值信息，生成相应的可视化图表在 PC
+                端与移动端供客户、高管、运营等角色以 T+1
+                或实时形式查看各类业务数据。
+              </li>
+              <li>
+                前端主要的难点在于项目规模较大，功能繁复，历史问题问题较多，且有跨端需求。针对这种状况使用
+                TypeScript 重构了项目的大部分模块，抽象出一层逻辑 core
+                层，使用类似装饰器模式的方案组装图表功能点，根据图表设置加工出相应的转换函数将图表数据转换为
+                Table 组件属性及 ECharts 图表配置。
+              </li>
+            </ul>
+          </div>
+          <div class="project">
+            <p class="project__meta clearfix">
+              <span class="project__name">muji 前端开发框架</span>
+              <span class="project__keyword">react</span>
+              <span class="project__keyword">TypeScript</span>
+            </p>
+            <ul class="list">
+              <li>
+                大搜车自研的中后台场景下的 React
+                前端开发框架，主要由我主导并实现。最开始主要为了满足哪吒项目复杂度较高，对
+                TypeScript
+                需求比较强烈而开发，包含了状态管理及路由解决方案。除了在各类中后台前端场景中得到应用，也配合公司内的
+                Spring 定制框架输出给后端 Java 开发使用的前端开发方案。
+              </li>
+              <li>
+                状态管理方面基于 redux 进行定制，采用类似 dva 的 DSL
+                设计，但进行了简化并使用 TypeScript
+                上下文推断特性获得完整的方法推断及参数验证能力。
+              </li>
+              <li>
+                模仿 vue-router
+                内置了一套路由库，根据文件路径在编译时生成相应的入口、路由配置、声明文件，并使用
+                react-hot-loader 解决了 React 开发中热重载很多坑的问题。
+              </li>
+            </ul>
+          </div>
+          <div class="project">
+            <p class="project__meta clearfix">
+              <span class="project__name">EasySheet 高性能表格组件</span>
+              <span class="project__keyword">canvas</span>
+            </p>
+            <ul class="list">
+              <li>
+                针对 rc-table 组件在移动端上性能不佳的问题，开发的基于 Canvas
+                绘制的表格组件，解决了 rc-table
+                在移动端数据量较大时，滑动表格时出现的各种表现不佳的问题。
+              </li>
+              <li>
+                提供了固定行列、合并单元格、自定义单元格样式、基本的事件系统等能力，并且进行了针对性的性能优化（并申请了专利），覆盖了哪吒产品在移动端上的表格需求。
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section__title">工作经历：</h2>
+        <div class="section__content">
+          <div class="job">
+            <p class="job__meta clearfix">
+              <span class="job__name">杭州大搜车（2017.08 - 今）</span>
+              <span class="job__keyword">react</span>
+              <span class="job__keyword">vue</span>
+              <span class="job__keyword">TypeScript</span>
+              <span class="job__keyword">中后台前端</span>
+              <span class="job__keyword">可视化</span>
+            </p>
+            <ul class="list">
+              <li>
+                自研一套基于 React
+                的针对中后台场景开发的前端开发框架，针对场景特点重点优化对于
+                TypeScript 的使用，赋能公司内中后台前端开发场景。
+              </li>
+              <li>先后负责过多款数据产品和数据大屏的开发工作。</li>
+              <li>
+                带领团队负责公司内部场景化数据产品与工具化数据产品（数据仓库）的开发与迭代工作。
+              </li>
+              <li>
+                带领团队支持研发中心向集团内各个 BU
+                输出包括登录、用户、店铺等服务能力。
+              </li>
+            </ul>
+          </div>
+          <div class="job">
+            <p class="job__meta clearfix">
+              <span class="job__name">武汉小松科技（2016.06 - 2017.07）</span>
+              <span class="job__keyword">vue</span>
+              <span class="job__keyword">react</span>
+              <span class="job__keyword">webpack</span>
+              <span class="job__keyword">前后端分离</span>
+            </p>
+            <ul class="list">
+              <li>
+                配合 Rails
+                后台开发桌面端全站（www.hahaxueche.com/www.hahaxueche.net）及移动端全站（m.hahaxueche.com/m.hahaxueche.net）。
+              </li>
+              <li>
+                使用 React/Redux 开发了 PC官网 的第一个版本，后期出于 SEO
+                的需求使用 React SSR。
+              </li>
+              <li>
+                使用 Vue/Vuex 开发了移动端官网，后处于维护成本的考虑逐步将 PC
+                官网重构至同一技术栈，并逐步迭代了 SSR、Code Splitting、redis
+                缓存等技术。
+              </li>
+              <li>配合前端网站的需求开发了部分 Rails 后台功能。</li>
+            </ul>
+          </div>
+          <div class="job">
+            <p class="job__meta clearfix">
+              <span class="job__name">武汉爱狗团（2015.02 - 2016.02）</span>
+              <span class="job__keyword">Node.js</span>
+              <span class="job__keyword">全栈</span>
+              <span class="job__keyword">AngularJS</span>
+            </p>
+            <ul class="list">
+              <li>
+                使用 Node.js 搭建并维护整个后端 restful api
+                、数据库及相关交易系统。
+              </li>
+              <li>使用 AngularJS 开发后台管理系统。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">教育经历：</h2>
+        <ul class="list">
+          <li>华中科技大学 测量仪器与技术 本科（2009.9 - 2013.6）</li>
+        </ul>
+      </section>
+      <section class="section section_contact">
+        <h2 class="section__title">联系方式：</h2>
+        <div class="section__content">
+          <ul>
+            <li><em>Phone：</em><span>15972216217</span></li>
+            <li><em>Wechat：</em><span>mehwww</span></li>
+            <li>
+              <em>Github：</em
+              ><a target="_blank" href="https://github.com/mehwww"
+                >https://github.com/mehwww</a
+              >
+            </li>
+            <li>
+              <em>Weibo： </em
+              ><a target="_blank" href="http://weibo.com/mehwww"
+                >http://weibo.com/mehwww</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <p class="from">From meh.run/resume</p>
+    </article>
+    <div class="action">
+      <button
+        class="action__download action__download_png js-action__download_png"
+      >
+        Download<br />as PNG
+      </button>
+      <button
+        class="action__download action__download_pdf js-action__download_pdf"
+      >
+        Download<br />as PDF
+      </button>
+      <p class="action__hint">
+        或者您可以直接<br /><span>右键</span>→<span>打印</span>
+      </p>
+    </div>
+    <script src="./index.ts"></script>
+  </body>
+</html>
