@@ -3,12 +3,12 @@ import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
 window.addEventListener('load', () => {
-  document
-    .querySelector('.header__image_selfie')
-    .setAttribute('src', require('./selfie.png'));
-  document
-    .querySelector('.header__image_avatar')
-    .setAttribute('src', require('./avatar.png'));
+  // document
+  //   .querySelector('.header__image_selfie')
+  //   .setAttribute('src', require('./selfie.png'));
+  // document
+  //   .querySelector('.header__image_avatar')
+  //   .setAttribute('src', require('./avatar.png'));
 
   const downloadPNGbtnEl = document.querySelector('.js-action__download_png');
   const downloadPDFbtnEl = document.querySelector('.js-action__download_pdf');

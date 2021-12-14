@@ -13,10 +13,10 @@
           <h1>我是<b>孟文翰</b><small>（mehwww）</small></h1>
           <h3>一个前端工程师<small>（别的也会点儿）</small></h3>
         </hgroup>
-        <div class="header__images">
+        <!-- <div class="header__images">
           <img alt="孟文翰" class="header__image_selfie" />
           <img alt="mehwww" class="header__image_avatar" />
-        </div>
+        </div> -->
       </header>
       <hr />
       <section class="section">
@@ -24,11 +24,11 @@
         <div class="section__content">
           <ul>
             <li>
-              五年前端开发经验，目前带领 10
-              人左右规模的团队，主要负责集团对内对外中后台场景下的前端开发工作。
+              七年前端开发经验，做过基建也做过业务，作为前端架构师角色负责过 10+
+              人团队 100w+ 行代码 Monorepo 仓库的整体架构。
             </li>
             <li>
-              有一定产品思维，会主动了解所负责业务的领域知识，在负责数据产品前端开发期间，熟悉了整个大数据开发的流程及常见模式。
+              有一定产品思维，会主动了解所负责业务的领域知识，对于大数据开发、大前端性能监控、教研生产等领域知识都有所了解。
             </li>
             <li>
               熟悉 JavaScript / TypeScript，掌握 react、vue
@@ -40,7 +40,7 @@
               系统，日常开发使用 macOS。
             </li>
             <li>
-              了解 Node.js 后端开发，熟悉阿里云、七牛等 IaaS、SaaS
+              了解 Node.js 后端开发，熟悉各种 IaaS、SaaS
               服务，能独立完成整站前端后台建设配置工作。
             </li>
           </ul>
@@ -49,6 +49,82 @@
       <section class="section">
         <h2 class="section__title">主要项目经历：</h2>
         <div class="section__content">
+          <div class="project">
+            <p class="project__meta clearfix">
+              <span class="project__name">排版创作工具</span>
+              <span class="project__keyword">React</span>
+              <span class="project__keyword">TypeScript</span>
+              <span class="project__keyword">CRDT</span>
+              <span class="project__keyword">RxJS</span>
+            </p>
+            <ul class="list">
+              <li>
+                面向排版老师生产教学素材的在线 LaTex 编写工具，基于 CRDT
+                算法支持多人协同编辑，将老师编写的 LaTeX 项目在线编译成 PDF
+                文件，供线下排版或错题机使用。
+              </li>
+              <li>
+                从 0 到 1
+                负责了整个项目的搭建与开发，在初期缺少产品和设计资源支持的场景下研发自驱调研需求进行迭代项目。将讲义排版流程线上化以后排版环境整体耗时减少
+                40% 以上。
+              </li>
+            </ul>
+          </div>
+          <div class="project">
+            <p class="project__meta clearfix">
+              <span class="project__name">讲义创作工具</span>
+              <span class="project__keyword">React</span>
+              <span class="project__keyword">TypeScript</span>
+              <span class="project__keyword">OT</span>
+              <span class="project__keyword">RxJS</span>
+            </p>
+            <ul class="list">
+              <li>
+                面向教研老师备课场景的在线文档编写工具，基于 OT
+                算法支持多人协同编辑，同时支持插入数十种学科类插件满足各学科老师备课需求。老师完成讲义编写后可以一键转化为课件供主讲老师在线课程使用。
+              </li>
+              <li>
+                抽取了核心的编辑器能力成独立的 JS
+                SDK，同时支持插件化能力开发，输出到别的素材生产平台满足各种类型的教学素材生产需求。
+              </li>
+              <li>
+                抽取了底层的数据结构与工具方法成
+                SDK，可以在脱离前端页面的场景下使用代码组装、修改讲义数据，作为底层支持了各种插入、解析、消费的需求；同时基于
+                RxJS
+                实现讲义文段功能，赋予讲义内容结构化能力，给讲义作为一切教研内容生产来源的定位打下基础。
+              </li>
+              <li>
+                推进实行基于故事点的敏捷迭代模式，平衡开发质量与速度的矛盾。
+              </li>
+            </ul>
+          </div>
+          <div class="project">
+            <p class="project__meta clearfix">
+              <span class="project__name">APM 性能监控平台</span>
+              <span class="project__keyword">React</span>
+              <span class="project__keyword">TypeScript</span>
+              <span class="project__keyword">Monorepo</span>
+            </p>
+            <ul class="list">
+              <li>
+                字节跳动统一的 APM(Application Performance Management)
+                性能监控平台，负责公司所有的移动端、前端、跨端产品的稳定性和性能监控保障，面向公司内的所有
+                RD 提供 issue 管理、监控报警、报错详情等功能。
+              </li>
+              <li>
+                每个端都有一个对应的平台，迭代频繁和不频繁的总共有 10+
+                不同类型的平台，每个平台都会有一些独有或共通的功能，同时技术债问题较多（平台历史悠久，同时经常会有别端同学参与「共建」）。
+              </li>
+              <li>
+                使用 Monorepo
+                的形式管理所有平台的前端代码，期间进行了一次大的设计改版，重构了大部分重点使用的核心功能并抽取可复用组件；迁移调优了项目开发工具链缩短构建时间
+                20% 以上。
+              </li>
+              <li>
+                基于公司平台优化了整个项目的国际化开发流程，支持自动翻译批量上传批量替换。
+              </li>
+            </ul>
+          </div>
           <div class="project">
             <p class="project__meta clearfix">
               <span class="project__name">哪吒智能 BI 系统</span>
@@ -142,9 +218,42 @@
         <div class="section__content">
           <div class="job">
             <p class="job__meta clearfix">
-              <span class="job__name">杭州大搜车（2017.08 - 今）</span>
-              <span class="job__keyword">react</span>
-              <span class="job__keyword">vue</span>
+              <span class="job__name">字节跳动（2019.11 - 今）</span>
+              <span class="job__keyword">React</span>
+              <span class="job__keyword">TypeScript</span>
+              <span class="job__keyword">Monorepo</span>
+              <span class="job__keyword">RxJS</span>
+              <span class="job__keyword">工程架构</span>
+            </p>
+            <ul class="list">
+              <li>
+                在 WebInfra 团队负责 APM
+                性能监控平台前端架构改造与功能开发，完成了整体项目改版、物料素材积累、工具架构优化等工作，期间从
+                0 到 1 搭建了 ToB 版初版项目，规范制定了开发和发布框架。
+              </li>
+              <li>
+                在教育中台团队负责整体项目架构与工具链的优化，基于 rush + pnpm
+                使用 Monorepo
+                的形式统一组织管理团队四个业务域四种类型的所有代码（共 120
+                多个项目 100w+ 行代码），践行 Trunk Based Development，与 UI/UE
+                同学一起开发了团队 DPL
+                组件，基于公司的开发框架和流水线平台进搭建了整个 CI/CD
+                流程，制定了团队开发全生命周期规范。
+              </li>
+              <li>
+                在教育中台团队同时负责教研创作工具域的业务迭代与开发，迭代讲义文档创作工具，支持基于
+                OT
+                算法的多人协同创作，同时支持插入数十种的学科类插件满足老师编写讲义的需求；另外从
+                0 到 1 搭建了基于 CRDT 协同的排版创作工具，支持老师通过在线编写
+                LaTex 输出排版物到线下线上进行使用。
+              </li>
+            </ul>
+          </div>
+          <div class="job">
+            <p class="job__meta clearfix">
+              <span class="job__name">杭州大搜车（2017.08 - 2019.11）</span>
+              <span class="job__keyword">React</span>
+              <span class="job__keyword">Vue</span>
               <span class="job__keyword">TypeScript</span>
               <span class="job__keyword">中后台前端</span>
               <span class="job__keyword">可视化</span>
@@ -168,8 +277,8 @@
           <div class="job">
             <p class="job__meta clearfix">
               <span class="job__name">武汉小松科技（2016.06 - 2017.07）</span>
-              <span class="job__keyword">vue</span>
-              <span class="job__keyword">react</span>
+              <span class="job__keyword">Vue</span>
+              <span class="job__keyword">React</span>
               <span class="job__keyword">webpack</span>
               <span class="job__keyword">前后端分离</span>
             </p>
